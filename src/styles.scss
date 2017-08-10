@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+/*VARIABLES*/
+@import '/assets/stylesheets/vars';
+
+/*TYPOGRAPHY*/
+@import '/assets/stylesheets/typography';
+
+/*MATERIAL ICONS*/
+@import "assets/stylesheets/icons";
+
+/*BOOTSTRAP normalize.css v5.0.0*/
+@import "~bootstrap/dist/css/bootstrap-reboot";
+
+/*BOOTSTRAP*/
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/dist/css/bootstrap-grid";
+@import "~bootstrap/scss/utilities/position";
+
+/*MATERIAL THEME CONFIG*/
+@import '/assets/stylesheets/theme';
+
+/*Site structure*/
+@import "assets/stylesheets/structure";
+@import "assets/stylesheets/media-queries";
