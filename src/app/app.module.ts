@@ -1,5 +1,6 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {
   MdButtonModule, MdCardModule, MdMenuModule, MdToolbarModule, MdIconModule,
   MdGridListModule,
@@ -28,7 +29,8 @@ import {MenuComponent} from './menu/menu.component';
     MdMenuModule,
     MdCardModule,
     MdToolbarModule,
-    MdIconModule
+    MdIconModule,
+    NgbModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

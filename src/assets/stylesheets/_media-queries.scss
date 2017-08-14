@@ -1,6 +1,17 @@
+/*
+* Sidebar
+*/
+
 /* Sidebar navigation */
 @media (max-width: 992px) {
   .hidden-menu {
     display: none !important;
+  }
+}
+
+/* Content */
+@media only screen and (max-width: 992px) {
+  .content {
+    margin-left: 0;
   }
 }

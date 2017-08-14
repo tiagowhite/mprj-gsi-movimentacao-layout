@@ -1,5 +1,6 @@
 /*VARIABLES*/
 @import '/assets/stylesheets/vars';
+@import '/assets/stylesheets/mixins';
 
 /*TYPOGRAPHY*/
 @import '/assets/stylesheets/typography';
@@ -7,13 +8,14 @@
 /*MATERIAL ICONS*/
 @import "assets/stylesheets/icons";
 
+/*BOOTSTRAP*/
 /*BOOTSTRAP normalize.css v5.0.0*/
 @import "~bootstrap/dist/css/bootstrap-reboot";
-
-/*BOOTSTRAP*/
 @import "~bootstrap/scss/variables";
-@import "~bootstrap/dist/css/bootstrap-grid";
-@import "~bootstrap/scss/utilities/position";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/utilities";
+@import "~bootstrap/scss/bootstrap-grid";
+
 
 /*MATERIAL THEME CONFIG*/
 @import '/assets/stylesheets/theme';
