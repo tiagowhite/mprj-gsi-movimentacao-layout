@@ -3,7 +3,7 @@ import {NgModule} from '@angular/core';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {
   MdButtonModule, MdCardModule, MdMenuModule, MdToolbarModule, MdIconModule,
-  MdGridListModule,
+  MdGridListModule, MdTabsModule,
 
 } from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -30,6 +30,8 @@ import {MenuComponent} from './menu/menu.component';
     MdCardModule,
     MdToolbarModule,
     MdIconModule,
+    MdTabsModule,
+    MdMenuModule,
     NgbModule.forRoot()
   ],
   providers: [],
