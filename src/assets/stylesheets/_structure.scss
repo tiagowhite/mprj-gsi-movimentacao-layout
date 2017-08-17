@@ -65,6 +65,8 @@ main > .sidebar {
   border-right: 1px solid map-get($mat-blue-grey, 0);
   box-shadow: 1px 1px 10px map-get($mat-blue-grey, 100);
   z-index: $zindex-navbar;
+  transtion: .3s;
+  -webkit-transition: .3s;
   @include linear-gradient(45deg, rgba(54, 67, 84, 1) 0, rgba(46, 58, 72, 1) 50%, rgba(54, 67, 84, 1) 50%, rgba(46, 58, 72, 1) 100%);
 
   ngb-accordion > div > .card-header {
@@ -100,10 +102,20 @@ main > .sidebar {
     overflow-y: auto;
     overflow-x: hidden;
   }
-
-
 }
-
+.sidebar-mobile {
+  width: 20%;
+  height: 100%;
+  position: relative!important;
+  float: left!important;
+  min-height: 1024px;
+  border-right: 1px solid map-get($mat-blue-grey, 0);
+  box-shadow: 1px 1px 10px map-get($mat-blue-grey, 100);
+  margin-left: -10%;
+  z-index: $zindex-navbar;
+  transition: all .5s ease-in-out;
+  @include linear-gradient(45deg, rgba(54, 67, 84, 1) 0, rgba(46, 58, 72, 1) 50%, rgba(54, 67, 84, 1) 50%, rgba(46, 58, 72, 1) 100%);
+}
 
 
 /* Content */
@@ -126,6 +138,7 @@ main > .sidebar {
     }
 
   }
+  section:last-child { background: none; border: none; }
 }
 
 /* Footer */

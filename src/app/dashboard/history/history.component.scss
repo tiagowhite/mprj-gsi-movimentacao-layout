@@ -1,0 +1,12 @@
+.mat-list-text {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 0 16px;
+
+  h5 { padding: 0; margin: 0;}
+  p { padding: 0; margin: 0;}
+}
+md-icon { display: inline-block;}

@@ -1,0 +1,14 @@
+<md-card>
+  <md-card-title><h5 class="font-weight-normal">Acompanhe suas solicitações</h5></md-card-title>
+  <md-list>
+    <md-list-item *ngFor="let movimento of movimentos">
+      <md-icon md-list-icon>folder</md-icon>
+      <div class="mat-list-text">
+        <p md-line>{{movimento.type}}</p>
+        <h5 md-line> {{movimento.subType}}</h5>
+      </div>
+    </md-list-item>
+    <md-divider></md-divider>
+  </md-list>
+</md-card>
+
