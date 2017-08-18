@@ -1,14 +1,38 @@
 <md-card>
-  <md-card-title><h5 class="font-weight-normal">Acompanhe suas solicitações</h5></md-card-title>
+  <md-card-title>
+    <h5 class="font-weight-normal">Acompanhe suas solicitações</h5>
+  </md-card-title>
   <md-list>
     <md-list-item *ngFor="let movimento of movimentos">
-      <md-icon md-list-icon>folder</md-icon>
-      <div class="mat-list-text">
-        <p md-line>{{movimento.type}}</p>
-        <h5 md-line> {{movimento.subType}}</h5>
+      <div class="mat-list-item-content">
+        <md-icon class="md-36">{{movimento.icon}}</md-icon>
+        <div class="mat-list-text">
+          <h5>{{movimento.type}}</h5>
+          <h6>{{movimento.subType}}</h6>
+        </div>
+        <md-progress-bar
+          class="example-margin"
+          [color]="movimento.progressColor"
+          [mode]="mode"
+          [value]="movimento.progress">
+        </md-progress-bar>
+        <span>{{ movimento.progress }}%</span>
+        <button md-icon-button [mdMenuTriggerFor]="menu">
+          <md-icon>more_vert</md-icon>
+        </button>
+        <md-menu #menu="mdMenu">
+          <button md-menu-item>
+            <md-icon>details</md-icon>
+            <span>Detalhar</span>
+          </button>
+          <button md-menu-item>
+            <md-icon>print</md-icon>
+            <span>Imprimir</span>
+          </button>
+        </md-menu>
       </div>
+      <hr>
     </md-list-item>
-    <md-divider></md-divider>
   </md-list>
 </md-card>
 

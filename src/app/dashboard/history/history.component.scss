@@ -1,12 +1,48 @@
-.mat-list-text {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  box-sizing: border-box;
-  overflow: hidden;
-  padding: 0 16px;
 
-  h5 { padding: 0; margin: 0;}
-  p { padding: 0; margin: 0;}
+md-card > md-list > md-list-item  {
+
+  md-icon { width: 36px; height: 36px; color: #5c6bc0;}
+
+  .mat-list-item-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+    height: 100px;
+    padding: 0 16px;
+    position: relative;
+
+  }
+
+  .mat-list-text {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 0 16px;
+    width: 20%;
+
+  }
+  h5 {
+    font-size: 16px;
+    font-weight: normal;
+    color: #364354;
+    padding: 0;
+    margin: 0;
+  }
+  h6 {
+    font-size: 12px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.4);
+  }
+
+  hr {
+    display: block;
+    border-top-style: solid;
+    border-top-width: 1px;
+    margin: 0;
+    border-top-color: rgba(33,33,33,.12);
+  }
+  span { font-size: 12px; padding: 10px;}
 }
-md-icon { display: inline-block;}
+

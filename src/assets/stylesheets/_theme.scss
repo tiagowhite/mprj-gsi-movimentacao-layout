@@ -4,10 +4,10 @@
 
 // hue.
 $mprj-app-primary:      mat-palette($mat-blue-grey);
-$mprj-app-accent:       mat-palette($mat-blue-grey, 50, 100, 200);
+$mprj-app-accent:       mat-palette($mat-indigo, 300, 400, 500);
 
 // The warn palette is optional (defaults to red).
-$mprj-app-warn:         mat-palette($mat-indigo);
+$mprj-app-warn:         mat-palette($mat-teal);
 
 // Create the theme object (a Sass map containing all of the palettes).
 $mprj-app-theme:        mat-light-theme($mprj-app-primary, $mprj-app-accent, $mprj-app-warn);

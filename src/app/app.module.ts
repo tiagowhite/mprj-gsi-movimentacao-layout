@@ -5,7 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import {
 MdButtonModule, MdCardModule, MdMenuModule, MdToolbarModule, MdIconModule,
-MdGridListModule, MdTabsModule, MdInputModule
+MdGridListModule, MdTabsModule, MdInputModule, MdProgressBarModule
 } from '@angular/material';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -16,9 +16,11 @@ import { FooterComponent } from './footer/footer.component';
 import { MenuComponent } from './menu/menu.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HistoryComponent } from './dashboard/history/history.component';
+import { FormulariosComponent } from './formularios/formularios.component';
 
 const appRoutes: Routes = [
-  { path: '', component: DashboardComponent }
+  { path: '', component: DashboardComponent },
+  { path: 'formularios', component: FormulariosComponent }
 ];
 
 @NgModule({
@@ -28,7 +30,8 @@ const appRoutes: Routes = [
     FooterComponent,
     MenuComponent,
     DashboardComponent,
-    HistoryComponent
+    HistoryComponent,
+    FormulariosComponent
   ],
   imports: [
     BrowserModule,
@@ -42,6 +45,7 @@ const appRoutes: Routes = [
     MdTabsModule,
     MdMenuModule,
     MdInputModule,
+    MdProgressBarModule,
     NgbModule.forRoot(),
     RouterModule.forRoot(appRoutes)
   ],
