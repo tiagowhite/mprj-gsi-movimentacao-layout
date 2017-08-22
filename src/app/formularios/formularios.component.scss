@@ -1,7 +1,15 @@
-.example-form {
-  width: 500px;
-}
-
-.example-full-width {
+form {
   width: 100%;
 }
+
+md-input-container {
+  width: 100%;
+}
+
+md-tab-group {
+  overflow: hidden;
+}
+
+.row { margin: 2em; }
+
+

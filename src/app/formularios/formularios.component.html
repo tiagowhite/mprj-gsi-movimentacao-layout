@@ -1,12 +1,64 @@
 <md-card>
-  <md-card-title>
-    <h5 class="font-weight-normal">Formulário</h5>
-  </md-card-title>
+  <md-card-title><h5 class="font-weight-normal">Formulário</h5></md-card-title>
+  <md-card-subtitle>
+    <div class="alert-info">Se necessário, corrija ou complemente as informações carregadas.</div>
+  </md-card-subtitle>
   <md-card-content>
-    <form class="example-form">
-      <md-input-container class="example-full-width">
-        <input mdInput placeholder="Email">
-      </md-input-container>
+    <form>
+      <md-tab-group #tabGroup [dynamicHeight]="true"  [selectedIndex]="selectedTab"  (selectedIndexChange)="getIndex(tabGroup.selectedIndex)">
+        <md-tab label="Solicitante" >
+          <div class="row">
+            <div class="col-md-3 form-group">
+              <md-input-container>
+                <input mdInput placeholder="Nome" value="">
+              </md-input-container>
+            </div>
+            <div class="col-md-3 form-group">
+              <md-input-container>
+                <input mdInput placeholder="Matricula" value="">
+              </md-input-container>
+            </div>
+            <div class="col-md-3 form-group">
+              <md-input-container>
+                <input mdInput placeholder="Cargo" value="">
+              </md-input-container>
+            </div>
+            <div class="col-md-3 form-group">
+              <md-input-container>
+                <input mdInput placeholder="Telefone" value="">
+              </md-input-container>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 form-group">
+              <md-input-container>
+                <input mdInput placeholder="Lotação" value="">
+              </md-input-container>
+            </div>
+            <div class="col-md-6 form-group">
+              <md-input-container>
+                <input mdInput placeholder="Endereço" value="">
+              </md-input-container>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <md-input-container>
+                <input mdInput placeholder="Complemento" value="">
+              </md-input-container>
+            </div>
+          </div>
+        </md-tab>
+        <md-tab label="Solicitação">
+          <div class="row">
+            <div class="col-md-12"><md-radio-button value="1">Licenças</md-radio-button></div>
+            <div class="col-md-12"><md-radio-button value="2">Auxílios</md-radio-button></div>
+            <div class="col-md-12"><md-radio-button value="3">Acumulação</md-radio-button></div>
+            <div class="col-md-12"><md-radio-button value="4">Plantão</md-radio-button></div>
+          </div>
+        </md-tab>
+      </md-tab-group>
+      <button (click)="selectTab($event)" md-mini-fab><md-icon> {{buttomIcon}} </md-icon></button>
     </form>
   </md-card-content>
 </md-card>

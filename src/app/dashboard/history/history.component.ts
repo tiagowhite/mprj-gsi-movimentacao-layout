@@ -16,7 +16,7 @@ export class HistoryComponent implements OnInit {
       createdAt: new Date('08/10/2017'),
       updatedAt: new Date('08/15/2017'),
       progress: 67.40,
-      progressColor: 'warm',
+      progressColor: 'primary',
       icon: 'send'
     },
     {
@@ -25,7 +25,7 @@ export class HistoryComponent implements OnInit {
       createdAt: new Date('08/01/2017'),
       updatedAt: new Date('08/05/2017'),
       progress: 70.10,
-      progressColor: 'warm',
+      progressColor: 'accent',
       icon: 'inbox'
     },
     {

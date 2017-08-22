@@ -5,7 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import {
 MdButtonModule, MdCardModule, MdMenuModule, MdToolbarModule, MdIconModule,
-MdGridListModule, MdTabsModule, MdInputModule, MdProgressBarModule
+MdGridListModule, MdTabsModule, MdInputModule, MdProgressBarModule, MdCheckboxModule, MdRadioModule
 } from '@angular/material';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -46,6 +46,8 @@ const appRoutes: Routes = [
     MdMenuModule,
     MdInputModule,
     MdProgressBarModule,
+    MdCheckboxModule,
+    MdRadioModule,
     NgbModule.forRoot(),
     RouterModule.forRoot(appRoutes)
   ],
